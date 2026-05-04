@@ -1,0 +1,8 @@
+# styles/GenAI/Transitions.yml
+extends: existence
+message: "Violation [GenAI.Transitions]: The phrase '%s' is an AI structural marker. Technical documentation must be front-loaded. Delete this transition and state the fact directly."
+level: error
+ignorecase: true
+tokens:
+  - "in conclusion"
+  - "to summarize"

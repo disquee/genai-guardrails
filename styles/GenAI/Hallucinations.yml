@@ -1,0 +1,10 @@
+# styles/GenAI/Filler.yml
+extends: existence
+message: "Violation [GenAI.Filler]: '%s' adds zero technical value and indicates AI generation."
+link: "https://www.disquedoesit.com/style-guide/active-voice"
+level: error
+ignorecase: true
+tokens:
+  - "seamlessly"
+  - "transformative"
+  - "robust"

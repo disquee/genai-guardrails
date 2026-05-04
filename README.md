@@ -12,7 +12,7 @@ This pipeline treats documentation with the same operational rigor as software d
 
 * **The Engine:** A GitHub Action (`.github/workflows/genai-guardrail.yml`) triggered on any Pull Request that modifies Markdown files.
 * **The Linter:** Uses the [Vale](https://vale.sh/) command-line tool to parse the text against established corporate style guides (Microsoft Manual of Style).
-* **The AI Guardrail:** A custom, deeply restrictive ruleset (`styles/GenAI/Fluff.yml`) designed specifically to identify the semantic markers of LLM outputs (e.g., words like "delve," "transformative," or "seamlessly").
+* **The AI Guardrails:** A granular, deeply restrictive ruleset (`styles/GenAI/`) designed specifically to identify the semantic markers of LLM outputs. This includes modular checks for Hallucinations, Transitions, and Filler (e.g., words like "delve," "transformative," or "seamlessly").
 
 ## Business Value
 This infrastructure shifts documentation validation left. By catching AI-generated technical debt in the PR phase rather than the publishing phase, this system allows a single technical writer to act as a Systems Governor. 
